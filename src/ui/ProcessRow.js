@@ -44,9 +44,12 @@ export default class ProcessRow extends React.Component {
           <td>{this.props.pid}</td>
           <td></td>
           <td>{this.props.type}</td>
-          <td>{filesize(this.props.memory.privateBytes*KB)}</td>
-          <td>{filesize(this.props.memory.sharedBytes*KB)}</td>
-          <td>{filesize(this.props.memory.workingSetSize*KB)}</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          {/*<td>{filesize(this.props.memory.privateBytes*KB)}</td>*/}
+          {/*<td>{filesize(this.props.memory.sharedBytes*KB)}</td>*/}
+          {/*<td>{filesize(this.props.memory.workingSetSize*KB)}</td>*/}
           <td>{formatPercentage(this.props.cpu.percentCPUUsage)}</td>
           <td>{this.props.cpu.idleWakeupsPerSecond}</td>
           <td></td>
@@ -66,9 +69,12 @@ export default class ProcessRow extends React.Component {
           <td>{this.props.pid}</td>
           <td>{wc.URLDomain}</td>
           <td>{this.props.type}</td>
-          <td>{filesize(this.props.memory.privateBytes*KB)}</td>
-          <td>{filesize(this.props.memory.sharedBytes*KB)}</td>
-          <td>{filesize(this.props.memory.workingSetSize*KB)}</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          {/*<td>{filesize(this.props.memory.privateBytes*KB)}</td>*/}
+          {/*<td>{filesize(this.props.memory.sharedBytes*KB)}</td>*/}
+          {/*<td>{filesize(this.props.memory.workingSetSize*KB)}</td>*/}
           <td>{formatPercentage(this.props.cpu.percentCPUUsage)}</td>
           <td>{this.props.cpu.idleWakeupsPerSecond}</td>
           <td>{wc.id}</td>
